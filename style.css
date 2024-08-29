@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    font-family: monospace;
+    transition: all 300ms ease-in-out;
+}
+
+html,
+body {
+    background: #002211;
+    color: #00ee11;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    position: relative;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    text-align: left;
+    width: 100%;
+    display: block;
+    border: 0;
+    border-radius: 0.9rem;
+    color: #002211;
+    background: #00ee11;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    opacity: 1;
+}
+
+button:hover {
+    background: #00aa11;
+}
+
+button:active {
+    background: #002211;
+}
+
+button:disabled {
+    opacity: 0;
+}
+
+.actions {
+    list-style: none;
+    margin: 0;
+    padding: 2rem 0;
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+.scene {
+    padding: 16px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+body:before {
+    display: block;
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2) 1px,
+        transparent 1px,
+        transparent 3px
+    );
+    pointer-events: none;
+    z-index: 10000;
+    xmix-blend-mode: multiply;
+    opacity: 0.5;
+}
+
+body:after {
+    display: block;
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.3;
+}
+
+@keyframes crt-flicker {
+    0% {
+        opacity: 0.95;
+    }
+    5% {
+        opacity: 0.85;
+    }
+    10% {
+        opacity: 0.95;
+    }
+    15% {
+        opacity: 0.9;
+    }
+    20% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0.9;
+    }
+    30% {
+        opacity: 0.95;
+    }
+    35% {
+        opacity: 0.85;
+    }
+    40% {
+        opacity: 0.9;
+    }
+    45% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.95;
+    }
+    55% {
+        opacity: 0.85;
+    }
+    60% {
+        opacity: 0.9;
+    }
+    65% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 0.95;
+    }
+    75% {
+        opacity: 0.85;
+    }
+    80% {
+        opacity: 0.9;
+    }
+    85% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 0.95;
+    }
+    95% {
+        opacity: 0.85;
+    }
+    100% {
+        opacity: 0.95;
+    }
+}
+
+body {
+    animation: crt-flicker 0.1s infinite;
+    filter: contrast(1.2) brightness(0.9);
+}
