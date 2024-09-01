@@ -1,3 +1,8 @@
+const playerState = {
+    health: 100,
+    inventory: [],
+};
+
 let clickSound, typeSound, ambientSound;
 
 function preload() {
