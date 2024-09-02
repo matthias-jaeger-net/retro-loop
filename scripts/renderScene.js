@@ -35,10 +35,24 @@ function renderScene(sceneKey) {
     // Add the finished dialogue
     document.body.appendChild(wrapper);
 
-    // Update the playerState
+    // TODO
+    // Feature should be that player can collect items
+    // and once collected they get added to the global
+    // playerState object.
+
+    // If the current scene has an inventory to pick from
     if ("inventory" in scene) {
-        console.log(scene["inventory"]);
+        // inventory is supposed to be an array
+        scene["inventory"].forEach((item) => {
+            // Matches the dummy data
+            if (item == "test") {
+                // Modify the state
+                playerState.inventory.push(item);
+            }
+        });
     }
+    // Check if that worked
+    console.log(playerState);
 
     // Disable all buttons before animation
     actions.querySelectorAll("button").forEach((button) => {
