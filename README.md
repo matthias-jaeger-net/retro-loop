@@ -6,6 +6,24 @@
 
 # https://matthias-jaeger-net.github.io/retro-loop/
 
+## Todos game design:
+
+-   [x] Basic story from start to finish
+-   [ ] More sophisticted story
+-   [ ] Develop a character players can relate to
+-   [x] Basic set of ambient sounds in place
+-   [ ] Different sounds based on scene
+-   [x] Generative images, drawings or other graphical assets
+-   [ ] Meaningful scene images
+
+## Todos technnical:
+
+-   [x] Implement a global state for the player
+-   [x] Update the player state from the scene
+-   [ ] Establish conditional branching in scene, based on player object state
+-   [ ] Implement an inventory that has an effect on the choices
+-   [ ] How to write a test for story.js?
+
 # Contributor hints
 
 ```javaScript
@@ -53,21 +71,3 @@ const story = {
     ...
 }
 ```
-
-### Todos game design:
-
--   [x] Basic story from start to finish
--   [ ] More sophisticted story
--   [ ] Develop a character players can relate to
--   [x] Basic set of ambient sounds in place
--   [ ] Different sounds based on scene
--   [x] Generative images, drawings or other graphical assets
--   [ ] Meaningful scene images
-
-### Todos technnical:
-
--   [x] Implement a global state for the player
--   [x] Update the player state from the scene
--   [ ] Establish conditional branching in scene, based on player object state
--   [ ] Implement an inventory that has an effect on the choices
--   [ ] How to write a test for story.js?
