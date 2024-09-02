@@ -2,8 +2,9 @@ const story = {
     start: {
         title: "Office7000",
         description:
-            "A text-based adventure where you play as an employee of a global corporation. Story and game by ChatGpt <chat.openai.com> and Matthias Jäger.",
+            "A text-based adventure where you play as an employee of a global corporation. Story and game by ChatGpt <chat.openai.com> and Matthias Jäger. Generative images made with Stable Diffusion and <diffusionbee.com>.",
         choices: [{ label: "Start Game", next: "intro" }],
+        thumbnail: "images/cover.png",
     },
     intro: {
         title: "The shuttle",

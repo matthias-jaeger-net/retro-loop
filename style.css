@@ -164,3 +164,12 @@ body {
     animation: crt-flicker 0.1s infinite;
     filter: contrast(1.2) brightness(0.9);
 }
+
+img {
+    filter: grayscale(100%) sepia(100%) hue-rotate(55deg) brightness(0.9)
+        contrast(1.2);
+    border-radius: 16px;
+    height: auto;
+    width: 100%;
+    border: 2px solid #00ee11;
+}

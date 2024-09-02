@@ -10,8 +10,12 @@ function renderScene(sceneKey) {
     title.textContent = scene.title;
     wrapper.appendChild(title);
 
+    const thumb = document.createElement("div");
+    wrapper.appendChild(thumb);
+
     const description = document.createElement("p");
-    description.textContent = ""; // Fill up later eith typewriter
+    // Start empty and fill later with typewriter
+    description.textContent = "";
     wrapper.appendChild(description);
 
     const actions = document.createElement("div");
@@ -53,6 +57,13 @@ function renderScene(sceneKey) {
     }
     // Check if that worked
     console.log(playerState);
+
+    // Check for thumbnail image
+    if (scene.thumbnail) {
+        const img = document.createElement("img");
+        img.src = scene.thumbnail;
+        thumb.appendChild(img);
+    }
 
     // Disable all buttons before animation
     actions.querySelectorAll("button").forEach((button) => {
