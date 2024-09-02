@@ -1,16 +1,12 @@
-# retro-loop
+# RetroLoop
 
 ![Retro Loop - a game by Matthias Jäger](images/Browser.png)
 
-> A text-based adventure gane where you play as an employee of a global corporation.
+> A text-based adventure gane where you play as an employee of a global corporation. Story and game development by ChatGpt <chat.openai.com> and Matthias Jäger. Images by DiffusionBee <diffusionbee.com>
 
-Story and game development by ChatGpt <chat.openai.com> and Matthias Jäger.
+# Play it for free: https://matthias-jaeger-net.github.io/retro-loop/
 
-### Deployment
-
-https://matthias-jaeger-net.github.io/retro-loop/
-
-### Story
+# Contributor hints
 
 ```javaScript
 /**
