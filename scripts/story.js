@@ -1,8 +1,8 @@
 const story = {
     start: {
-        title: "Office7000",
+        title: "RetroLoop",
         description:
-            "A small adventure game where you take the role of an employee in a global corporation.",
+            "A text-based adventure game where you take the role of an employee in a typical office.",
         choices: [{ label: "Start Game", next: "intro" }],
         thumbnail: "images/cover.png",
     },
