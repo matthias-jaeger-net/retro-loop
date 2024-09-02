@@ -21,8 +21,10 @@ const story = {
             "You decide to buy a drink. The cool liquid is refreshing, but as you take a sip, you notice the shuttle arriving in the distance. Will you risk another delay for a second drink?",
         choices: [
             { label: "Catch the shuttle", next: "getMessage" },
-            { label: "Buy another drink", next: "gameOver" },
+            { label: "Buy another drink", next: "buyDrink" },
         ],
+        inventory: ["A drink"],
+        damage: 30,
     },
     getMessage: {
         title: "The message",

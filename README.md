@@ -47,7 +47,8 @@ const story = {
         ],
         // Optional:
         // Player can take damage when visiting a scene
-        // TODO: implement checks and setter for damage
+        // renderScene checks and calls gameOver when the
+        // playerState.health goes below 0
         damage: 20,
 
     },

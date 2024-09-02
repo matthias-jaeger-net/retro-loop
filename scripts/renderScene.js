@@ -39,23 +39,24 @@ function renderScene(sceneKey) {
     // Add the finished dialogue
     document.body.appendChild(wrapper);
 
-    // TODO
-    // Feature should be that player can collect items
-    // and once collected they get added to the global
-    // playerState object.
-
     // If the current scene has an inventory to pick from
     if ("inventory" in scene) {
-        // inventory is supposed to be an array
         scene["inventory"].forEach((item) => {
-            // Matches the dummy data
-            if (item == "test") {
-                // Modify the state
-                playerState.inventory.push(item);
-            }
+            playerState.inventory.push(item);
         });
     }
-    // Check if that worked
+
+    // If the current scene has a damage to be subtracted
+    if ("damage" in scene) {
+        const damageValue = scene["damage"];
+
+        if (playerState.health - damageValue <= 0) {
+            renderScene("gameOver");
+        } else {
+            playerState.health -= damageValue;
+        }
+    }
+
     console.log(playerState);
 
     // Check for thumbnail image
