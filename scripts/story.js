@@ -12,7 +12,16 @@ const story = {
             "The sun rises over Megacity and you wait for the shuttle. You are thirsty from the long wait. Should you buy a drink at the station?",
         choices: [
             { label: "Wait for the shuttle", next: "getMessage" },
-            { label: "Buy a drink", next: "gameOver" },
+            { label: "Buy a drink", next: "buyDrink" },
+        ],
+    },
+    buyDrink: {
+        title: "The drink",
+        description:
+            "You decide to buy a drink. The cool liquid is refreshing, but as you take a sip, you notice the shuttle arriving in the distance. Will you risk another delay for a second drink?",
+        choices: [
+            { label: "Catch the shuttle", next: "getMessage" },
+            { label: "Buy another drink", next: "gameOver" },
         ],
     },
     getMessage: {
