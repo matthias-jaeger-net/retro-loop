@@ -22,6 +22,7 @@ const story = {
             { label: "Read the message immediately", next: "openMessage" },
             { label: "Save it for later", next: "ignoreMessage" },
         ],
+        inventory: ["test"],
     },
     openMessage: {
         title: "Q3 financial report",

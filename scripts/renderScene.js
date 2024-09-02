@@ -35,6 +35,11 @@ function renderScene(sceneKey) {
     // Add the finished dialogue
     document.body.appendChild(wrapper);
 
+    // Update the playerState
+    if ("inventory" in scene) {
+        console.log(scene["inventory"]);
+    }
+
     // Disable all buttons before animation
     actions.querySelectorAll("button").forEach((button) => {
         button.disabled = true;
