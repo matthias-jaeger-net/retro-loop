@@ -1,10 +1,10 @@
 # RetroLoop
 
-![Retro Loop - a game by Matthias Jäger](images/Browser.png)
-
 > A text-based adventure gane where you play as an employee of a global corporation. Story and game development by ChatGpt <chat.openai.com> and Matthias Jäger. Images by DiffusionBee <diffusionbee.com>
 
-# Play it for free: https://matthias-jaeger-net.github.io/retro-loop/
+![Retro Loop - a game by Matthias Jäger](images/Browser.png)
+
+# https://matthias-jaeger-net.github.io/retro-loop/
 
 # Contributor hints
 
@@ -54,12 +54,20 @@ const story = {
 }
 ```
 
-### Next round:
+### Todos game design:
 
--   Establish conditional branching in story, based on player object state
+-   [x] Basic story from start to finish
+-   [ ] More sophisticted story
+-   [ ] Develop a character players can relate to
+-   [x] Basic set of ambient sounds in place
+-   [ ] Different sounds based on scene
+-   [x] Generative images, drawings or other graphical assets
+-   [ ] Meaningful scene images
 
-## Ideas:
+### Todos technnical:
 
--   Different sounds based on scene
--   Generative images, drawings or other graphical assets
--   How to write a test for story.js?
+-   [x] Implement a global state for the player
+-   [x] Update the player state from the scene
+-   [ ] Establish conditional branching in scene, based on player object state
+-   [ ] Implement an inventory that has an effect on the choices
+-   [ ] How to write a test for story.js?
