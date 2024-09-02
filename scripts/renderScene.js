@@ -2,7 +2,7 @@ function renderScene(sceneKey) {
     // Render a scene based on the current part of the story
     const scene = story[sceneKey];
 
-    // Select DOM elements
+    // DOM elements
     const wrapper = document.createElement("div");
     wrapper.classList.add("scene");
 
@@ -10,8 +10,8 @@ function renderScene(sceneKey) {
     title.textContent = scene.title;
     wrapper.appendChild(title);
 
-    const thumb = document.createElement("div");
-    wrapper.appendChild(thumb);
+    const thumbnail = document.createElement("div");
+    wrapper.appendChild(thumbnail);
 
     const description = document.createElement("p");
     // Start empty and fill later with typewriter
@@ -63,7 +63,7 @@ function renderScene(sceneKey) {
     if (scene.thumbnail) {
         const img = document.createElement("img");
         img.src = scene.thumbnail;
-        thumb.appendChild(img);
+        thumbnail.appendChild(img);
     }
 
     // Disable all buttons before animation
